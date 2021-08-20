@@ -84,10 +84,10 @@ if 'CE_SERVICES' in os.environ:
     vcapEnv=json.loads(os.environ['CE_SERVICES'])
 
     # Db2, either Db2 Warehouse or Db2 (lite plan)
-    if 'dashdb' in vcapEnv:
-        DB2_URI=vcapEnv['dashdb'][0]['credentials']['uri']
-    elif 'dashdb-for-transactions' in vcapEnv:
-        DB2_URI=vcapEnv['dashdb-for-transactions'][0]['credentials']['uri']
+    # if 'dashdb' in vcapEnv:
+        # DB2_URI=vcapEnv['dashdb'][0]['credentials']['uri']
+    # elif 'dashdb-for-transactions' in vcapEnv:
+        # DB2_URI=vcapEnv['dashdb-for-transactions'][0]['credentials']['uri']
     
     # AppID
     if 'appid' in vcapEnv:
